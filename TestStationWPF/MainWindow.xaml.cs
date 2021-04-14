@@ -24,8 +24,6 @@ namespace TestStationWPF
         public MainWindow()
         {
             InitializeComponent();
-            var conn = new DeviceRepository();
-            conn.GetACTOSADevice(1);
             _mainFrame.Navigate(new HomePage());
         }
     }

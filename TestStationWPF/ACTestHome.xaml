@@ -56,14 +56,14 @@
             </StackPanel>
             
             <StackPanel
-                Margin="0,20,0,0"
+                Margin="5"
                 HorizontalAlignment="Center"
                 Orientation="Horizontal">
 
                 <Button
                     Content="Start Test" 
                     BorderThickness="1,1,1,1"
-                    Margin="20"
+                    Margin="5"
                     Padding="5,1,5,1" Click="StartTestButton"/>
             </StackPanel>
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestStationWPF.Data;
 
 namespace TestStationWPF
 {
@@ -23,6 +24,8 @@ namespace TestStationWPF
         public MainWindow()
         {
             InitializeComponent();
+            var conn = new DeviceRepository();
+            conn.GetACTOSADevice(1);
             _mainFrame.Navigate(new HomePage());
         }
     }

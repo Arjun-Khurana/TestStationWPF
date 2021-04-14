@@ -34,5 +34,15 @@ namespace TestStationWPF
         {
             NavigationService.GoBack();
         }
+
+        private void TOSARadioChecked(object sender, RoutedEventArgs e)
+        {
+            Step1.Text = "(1)    Load TOSA into Eval Board";
+        }
+
+        private void ROSARadioChecked(object sender, RoutedEventArgs e)
+        {
+            Step1.Text = "(1)    Load ROSA into Eval Board";
+        }
     }
 }

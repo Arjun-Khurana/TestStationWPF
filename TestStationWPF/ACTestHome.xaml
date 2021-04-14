@@ -26,8 +26,8 @@
                 <TextBlock HorizontalAlignment="Center" FontSize="20" Text="Test Information" Margin="5"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
-                    <RadioButton x:Name="TosaRadio" Margin="0,0,10,0" Content="TOSA" MinWidth="0" Checked="TOSA_Radio_Checked"/>
-                    <RadioButton x:Name="RosaRadio"  Content="ROSA" MinWidth="0" Checked="ROSA_Radio_Checked"/>
+                    <RadioButton x:Name="TosaRadio" Margin="0,0,10,0" Content="TOSA" MinWidth="0" Checked="TOSARadioChecked"/>
+                    <RadioButton x:Name="RosaRadio"  Content="ROSA" MinWidth="0" Checked="ROSARadioChecked"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
@@ -72,7 +72,7 @@
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
-            <Button Content="Back" BorderThickness="0,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}" FontStyle="Normal" FontWeight="Regular" Width="38" Click="BackButton"></Button>
+            <Button Content="Back" Style="{StaticResource MinimalButton}" Click="BackButton"></Button>
         </StackPanel>
 
     </Grid>

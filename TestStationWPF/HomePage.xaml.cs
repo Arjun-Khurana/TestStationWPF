@@ -16,14 +16,23 @@ using System.Windows.Shapes;
 namespace TestStationWPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HomePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HomePage : Page
     {
-        public MainWindow()
+        public HomePage()
         {
             InitializeComponent();
-            _mainFrame.Navigate(new HomePage());
+        }
+
+        private void DCTestButton(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new DCTestHome());
+        }
+
+        private void ACTestButton(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ACTestHome());
         }
     }
 }
